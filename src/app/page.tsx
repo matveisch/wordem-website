@@ -1,3 +1,4 @@
+import AppShowcase from "@/components/AppShowcase"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ChevronRight, Download, Star, TrendingUp, Users } from "lucide-react"
@@ -30,8 +31,8 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-[#EEEDEB]">
       <main className="flex-grow">
         <section className="py-20 px-6 text-center bg-gradient-to-r from-[#F5C6CB] via-[#FAD7A0] to-[#A9DFBF] text-[#009963]">
-          <h2 className="text-4xl font-bold mb-4">Master Your Vocabulary, One Word At A Time</h2>
-          <p className="text-xl mb-8">WordEm adapts to your knowledge level, categorizing words into Bad, Good, Fine and Easy groups for efficient learning.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Master Your Vocabulary, One Word At A Time</h2>
+          <p className="text-xl md:text-2xl mb-8">WordEm adapts to your knowledge level, categorizing words into Bad, Good, Fine and Easy groups for efficient learning.</p>
           <Button size="lg" className="bg-[#009963] text-white hover:bg-[#66b8a3]">
             Get Started
             <Download className="ml-2 h-4 w-4" />
@@ -80,6 +81,11 @@ export default function Home() {
             </Button>
           </div>
         </section>
+
+        <section className="py-20 px-6 bg-[#F5F0E5]">
+        <h2 className="text-3xl font-bold text-center mb-6 text-[#009963]">See WordEm in Action</h2>
+        <AppShowcase />
+      </section>
 
         <section className="py-20 px-6 text-center bg-[#EEEDEB]">
           <h2 className="text-3xl font-bold mb-4 text-[#009963]">Perfect For All Learners</h2>
