@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import Image from "next/image";
@@ -31,20 +30,19 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-      <header className="flex items-center justify-between p-6 bg-[#F5F0E5]">
+      <header className="flex items-center justify-between px-6 py-2 bg-[#F5F0E5]">
         <div className="flex items-center space-x-4">
           <Image src="/images/wordem-icon-edited.png" alt="WordEm logo" width={50} height={50} />
           <Link href="/" className="text-2xl font-bold text-[#009963]">WordEm</Link>
         </div>
         <nav>
           <ul className="flex space-x-4">
-            <li><Link href="/" className="hover:underline text-[#009963]">Home</Link></li>
-            <li><Link href="/blog" className="hover:underline text-[#009963]">Blog</Link></li>
-            <li><Button className="bg-[#009963] text-white hover:bg-[#66b8a3]">Download App</Button></li>
+            <li className="flex justify-center items-center"><Link href="/" className="hover:underline text-[#009963]">Home</Link></li>
+            <li className="flex justify-center items-center"><Link href="/blog" className="hover:underline text-[#009963]">Blog</Link></li>
           </ul>
         </nav>
       </header>
-        {children}
+      {children}
       <footer className="bg-[#F5F0E5] text-[#009963] py-6 px-6 text-center">
         <p>© 2024 WordEm. All rights reserved.</p> 
       </footer>
