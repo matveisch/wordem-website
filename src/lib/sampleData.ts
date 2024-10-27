@@ -206,24 +206,9 @@ export const blogPosts = [
       'Debunking common misconceptions about language learning that prevent people from starting or continuing their journey. Discover the truth about age limits, natural talent, and time commitment in language acquisition.',
     readTime: '6 min read',
     category: 'Language Learning',
-    image: '/api/placeholder/800/400',
+    image: 'myths.jpg',
     imageAlt: 'Illustration showing a person breaking through a wall of misconceptions',
-    tags: [
-      'language learning',
-      'learning myths',
-      'motivation',
-      'beginner tips',
-      'learning psychology',
-      'self-improvement',
-      'study motivation',
-    ],
     content: `<article>
-    <header>
-        <h1>8 Language Learning Myths That Are Holding You Back</h1>
-        <div class="meta">6 min read • Language Learning</div>
-        <img src="/api/placeholder/800/400" alt="Illustration showing a person breaking through a wall of misconceptions" />
-    </header>
-
     <p class="highlight-box">
         "I'm too old to learn a new language." "I don't have a natural talent for languages." Sound familiar? 
         These common beliefs have prevented countless people from embarking on their language learning journey. 
@@ -330,11 +315,6 @@ export const blogPosts = [
         learn a new language.
     </div>
 </article>`,
-    relatedPosts: [
-      'Master Any Language: 7 Memory Techniques Used by Polyglots',
-      'Why Learning New Words Daily Improves Your Brain Function',
-      'How to Build a Consistent Learning Routine',
-    ],
     slug: '8-language-learning-myths-holding-you-back',
   },
 ];
