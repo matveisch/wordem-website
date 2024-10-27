@@ -29,7 +29,7 @@ export default async function BlogPage() {
                 <div className="md:flex">
                   <div className="md:w-1/3">
                     <Image
-                      src={`https://cpsynqohyobfkkbkljle.supabase.co/storage/v1/object/sign/posts-images/${post.image}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwb3N0cy1pbWFnZXMvdHJhaW4teW91ci1icmFpbi5qcGciLCJpYXQiOjE3MzAwMjk3NTQsImV4cCI6MjA0NTM4OTc1NH0.TpOqkqeQq_xJONMYWRG1ufIXH8Llm_jej946yy_7gUs`}
+                      src={`https://cpsynqohyobfkkbkljle.supabase.co/storage/v1/object/public/posts-images/${post.image}`}
                       alt={post.image_alt}
                       width={400}
                       height={200}

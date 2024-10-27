@@ -103,24 +103,9 @@ export const blogPosts = [
       'Learn the powerful memorization techniques that polyglots use to remember thousands of words. Discover scientifically-proven methods to enhance your vocabulary retention and accelerate your language learning journey.',
     readTime: '8 min read',
     category: 'Learning Techniques',
-    image: '/api/placeholder/800/400',
+    image: 'memory-techniques.jpg',
     imageAlt: 'Illustration of memory palace technique with floating words and visual associations',
-    tags: [
-      'memory techniques',
-      'polyglot methods',
-      'vocabulary learning',
-      'language learning',
-      'memorization',
-      'learning strategies',
-      'study tips',
-    ],
     content: `<article>
-    <header>
-        <h1>Master Any Language: 7 Memory Techniques Used by Polyglots</h1>
-        <div class="meta">8 min read • Learning Techniques</div>
-        <img src="/api/placeholder/800/400" alt="Illustration of memory palace technique with floating words and visual associations" />
-    </header>
-
     <p class="highlight-box">
         Ever wondered how polyglots manage to learn thousands of words in multiple languages? Their secret lies not in natural talent, 
         but in powerful memory techniques that anyone can master. These methods have been refined through centuries of use and 
@@ -150,11 +135,6 @@ export const blogPosts = [
         <li>Connect new words to familiar concepts</li>
         <li>Review by retelling the story</li>
     </ul>
-
-    <div class="citation">
-        "The human brain is far better at remembering stories than isolated pieces of information. Stories engage multiple 
-        neural pathways simultaneously, creating stronger memory traces." - Cognitive Psychology Quarterly, 2023
-    </div>
 
     <h2>3. The Personal Connection Technique</h2>
     <p>
@@ -217,11 +197,6 @@ export const blogPosts = [
         others as you become more comfortable with the process.
     </div>
 </article>`,
-    relatedPosts: [
-      'Why Learning New Words Daily Improves Your Brain Function',
-      'The Science of Spaced Repetition in Language Learning',
-      'How to Build a Sustainable Learning Routine',
-    ],
     slug: 'master-any-language-7-memory-techniques-used-by-polyglots',
   },
   {
