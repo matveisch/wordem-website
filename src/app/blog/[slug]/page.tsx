@@ -1,12 +1,14 @@
 import { Button } from '@/components/ui/button';
-import { blogPosts } from '@/lib/sampleData';
+import { createClient } from '@/utils/supabase/server';
 import { ChevronLeft, Clock, Tag } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import './blog-post.css';
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
-  const post = blogPosts.find((post) => post.id.toString() === params.slug);
+export default async function BlogPost({ params }: { params: { slug: string } }) {
+  const { slug } = await params;
+  const supabase = await createClient();
+  const { data: post } = await supabase.from('posts').select('*').eq('slug', slug).single();
 
   if (!post) return <div>no data</div>;
 
@@ -26,7 +28,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 
           <div className="mb-6 flex flex-wrap items-center text-sm text-[#66b8a3]">
             <span className="mr-4 flex items-center">
-              <Clock className="mr-1 h-4 w-4" /> {post.readTime}
+              <Clock className="mr-1 h-4 w-4" /> {post.read_time}
             </span>
             <span className="mr-4 flex items-center">
               <Tag className="mr-1 h-4 w-4" /> {post.category}
@@ -34,8 +36,8 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
           </div>
 
           <Image
-            src={post.image}
-            alt={post.imageAlt}
+            src={`https://cpsynqohyobfkkbkljle.supabase.co/storage/v1/object/sign/posts-images/${post.image}?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJwb3N0cy1pbWFnZXMvdHJhaW4teW91ci1icmFpbi5qcGciLCJpYXQiOjE3MzAwMjk3NTQsImV4cCI6MjA0NTM4OTc1NH0.TpOqkqeQq_xJONMYWRG1ufIXH8Llm_jej946yy_7gUs`}
+            alt={post.image_alt}
             width={800}
             height={400}
             className="mb-8 rounded-lg"
@@ -46,7 +48,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
             dangerouslySetInnerHTML={{ __html: post.content }}
           />
 
-          <div className="mt-8 border-t border-[#66b8a3] pt-8">
+          {/* <div className="mt-8 border-t border-[#66b8a3] pt-8">
             <h3 className="mb-4 text-2xl font-bold text-[#009963]">Tags</h3>
             <div className="flex flex-wrap gap-2">
               {post.tags.map((tag, index) => (
@@ -58,20 +60,7 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
                 </span>
               ))}
             </div>
-          </div>
-
-          <div className="mt-8 border-t border-[#66b8a3] pt-8">
-            <h3 className="mb-4 text-2xl font-bold text-[#009963]">Related Posts</h3>
-            <ul className="space-y-4">
-              {post.relatedPosts.map((relatedPost, index) => (
-                <li key={index}>
-                  <Link href="#" className="text-[#009963] hover:underline">
-                    {relatedPost}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+          </div> */}
         </article>
       </main>
 

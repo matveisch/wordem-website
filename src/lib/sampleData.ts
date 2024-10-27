@@ -6,7 +6,7 @@ export const blogPosts = [
       'Discover the scientific benefits of vocabulary learning on brain function, memory, and cognitive performance. Learn how daily word practice enhances mental agility and builds cognitive reserve.',
     readTime: '7 min read',
     category: 'Brain Science & Learning',
-    image: '/api/placeholder/800/400',
+    image: '',
     imageAlt: 'Brain visualization showing active regions during vocabulary learning',
     tags: [
       'brain health',
@@ -18,12 +18,6 @@ export const blogPosts = [
       'memory improvement',
     ],
     content: `<article>
-    <header>
-        <h1>Why Learning New Words Daily Improves Your Brain Function</h1>
-        <div class="meta">7 min read • Brain Science & Learning</div>
-        <img src="/api/placeholder/800/400" alt="Brain visualization showing active regions during vocabulary learning" />
-    </header>
-
     <p class="highlight-box">
         Recent neuroscience research reveals that learning new words activates multiple brain regions simultaneously, 
         creating neural pathways that enhance memory, cognitive flexibility, and overall brain health.
@@ -100,32 +94,7 @@ export const blogPosts = [
         for the future.
     </div>
 </article>`,
-    seoKeywords: [
-      'vocabulary learning benefits',
-      'brain function improvement',
-      'cognitive reserve',
-      'memory enhancement',
-      'language learning science',
-      'brain training',
-      'vocabulary building',
-      'neural plasticity',
-      'cognitive development',
-    ],
-    citations: [
-      {
-        source: 'Journal of Cognitive Neuroscience',
-        year: 2023,
-        quote:
-          'Adults who engage in regular vocabulary learning show improved cognitive function across multiple domains, including memory, attention, and executive function.',
-      },
-    ],
-    relatedPosts: [
-      'The Role of Spaced Repetition in Language Learning',
-      'How to Build a Consistent Learning Habit',
-      "Understanding Your Brain's Language Centers",
-    ],
     slug: 'why-learning-new-words-daily-improves-brain-function',
-    status: 'published',
   },
   {
     id: 2,
@@ -248,31 +217,12 @@ export const blogPosts = [
         others as you become more comfortable with the process.
     </div>
 </article>`,
-    seoKeywords: [
-      'polyglot memory techniques',
-      'vocabulary memorization methods',
-      'memory palace technique',
-      'language learning tips',
-      'how to remember new words',
-      'polyglot learning secrets',
-      'vocabulary retention strategies',
-      'memorization techniques language',
-    ],
-    citations: [
-      {
-        source: 'Cognitive Psychology Quarterly',
-        year: 2023,
-        quote:
-          'The human brain is far better at remembering stories than isolated pieces of information. Stories engage multiple neural pathways simultaneously, creating stronger memory traces.',
-      },
-    ],
     relatedPosts: [
       'Why Learning New Words Daily Improves Your Brain Function',
       'The Science of Spaced Repetition in Language Learning',
       'How to Build a Sustainable Learning Routine',
     ],
     slug: 'master-any-language-7-memory-techniques-used-by-polyglots',
-    status: 'published',
   },
   {
     id: 3,
@@ -405,30 +355,11 @@ export const blogPosts = [
         learn a new language.
     </div>
 </article>`,
-    seoKeywords: [
-      'language learning myths',
-      'language learning tips',
-      'how to start learning language',
-      'language learning age limit',
-      'language learning talent myth',
-      'best way to learn language',
-      'language learning motivation',
-      'language learning success',
-    ],
-    citations: [
-      {
-        source: 'Applied Linguistics Journal',
-        year: 2024,
-        quote:
-          "Studies of successful language learners show no correlation between 'natural talent' and ultimate success. The key factors are motivation and time invested in active practice.",
-      },
-    ],
     relatedPosts: [
       'Master Any Language: 7 Memory Techniques Used by Polyglots',
       'Why Learning New Words Daily Improves Your Brain Function',
       'How to Build a Consistent Learning Routine',
     ],
     slug: '8-language-learning-myths-holding-you-back',
-    status: 'published',
   },
 ];
