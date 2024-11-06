@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import './blog-post.css';
 
-export default async function BlogPost({ params }: { params: { slug: string } }) {
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const supabase = await createClient();
   const { data: post } = await supabase.from('posts').select('*').eq('slug', slug).single();
