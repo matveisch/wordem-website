@@ -1,0 +1,15 @@
+{
+  "name": "WordEm",
+  "short_name": "WordEm",
+  "description": "Master Your Vocabulary, One Word At A Time",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#EEEDEB",
+  "theme_color": "#009963",
+  "orientation": "portrait",
+  "categories": ["education", "productivity"],
+  "lang": "en-US",
+  "dir": "ltr",
+  "prefer_related_applications": false,
+  "related_applications": []
+}

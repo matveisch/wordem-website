@@ -1,0 +1,14 @@
+.prose h2 {
+  color: #009963;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.prose p {
+  margin-bottom: 1rem;
+}
+
+.prose strong {
+  color: #66b8a3;
+}

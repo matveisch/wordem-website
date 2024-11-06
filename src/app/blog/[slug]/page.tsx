@@ -72,7 +72,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
           Start learning new words daily with WordEm and enhance your cognitive abilities!
         </p>
         <Button size="lg" className="bg-[#009963] text-white hover:bg-[#66b8a3]">
-          Download WordEm
+          <Link href="https://apps.apple.com/app/wordem/id6503954546">Download WordEm</Link>
         </Button>
       </section>
     </div>
