@@ -75,8 +75,13 @@ export default async function BlogPage() {
         <p className="mb-8 text-xl text-[#607D8B]">
           Download WordEm now and start your journey to mastering new words!
         </p>
-        <Button size="lg" className="bg-[#009963] text-white hover:bg-[#66b8a3]">
-          Download WordEm
+        <Button size="lg" className="bg-[#009963] px-0 text-white hover:bg-[#66b8a3]">
+          <Link
+            href="https://apps.apple.com/app/wordem/id6503954546"
+            className="flex h-full w-full items-center justify-center px-8"
+          >
+            Download WordEm
+          </Link>
         </Button>
       </section>
     </div>

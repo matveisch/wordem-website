@@ -64,8 +64,11 @@ export default function Home() {
             WordEm adapts to your knowledge level, categorizing words into Bad, Good, Fine and Easy
             groups for efficient learning.
           </p>
-          <Button size="lg" className="bg-[#009963] text-white hover:bg-[#66b8a3]">
-            <Link href="https://apps.apple.com/app/wordem/id6503954546" className="flex">
+          <Button size="lg" className="bg-[#009963] px-0 text-white hover:bg-[#66b8a3]">
+            <Link
+              href="https://apps.apple.com/app/wordem/id6503954546"
+              className="flex h-full w-full items-center justify-center px-8"
+            >
               Get Started
               <Download className="ml-2 h-4 w-4" />
             </Link>
@@ -113,8 +116,11 @@ export default function Home() {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <Button size="lg" className="bg-[#009963] text-white hover:bg-[#66b8a3]">
-              <Link href="https://apps.apple.com/app/wordem/id6503954546" className="flex">
+            <Button size="lg" className="bg-[#009963] px-0 text-white hover:bg-[#66b8a3]">
+              <Link
+                href="https://apps.apple.com/app/wordem/id6503954546"
+                className="flex h-full w-full items-center justify-center px-8"
+              >
                 Upgrade to Premium
                 <Star className="ml-2 h-4 w-4" />
               </Link>
@@ -136,8 +142,11 @@ export default function Home() {
             enhance your word power, WordEm is your ideal companion.
           </p>
           <div className="flex justify-center space-x-4">
-            <Button size="lg" className="bg-[#009963] text-white hover:bg-[#66b8a3]">
-              <Link href="https://apps.apple.com/app/wordem/id6503954546" className="flex">
+            <Button size="lg" className="bg-[#009963] px-0 text-white hover:bg-[#66b8a3]">
+              <Link
+                href="https://apps.apple.com/app/wordem/id6503954546"
+                className="flex h-full w-full items-center justify-center px-8"
+              >
                 Download Now
                 <Download className="ml-2 h-4 w-4" />
               </Link>
@@ -145,9 +154,12 @@ export default function Home() {
             <Button
               size="lg"
               variant="outline"
-              className="border-[#009963] text-[#009963] hover:bg-[#F5F0E5]"
+              className="border-[#009963] px-0 text-[#009963] hover:bg-[#F5F0E5]"
             >
-              <Link href="https://apps.apple.com/app/wordem/id6503954546" className="flex">
+              <Link
+                href="https://apps.apple.com/app/wordem/id6503954546"
+                className="flex h-full w-full items-center justify-center px-8"
+              >
                 Learn More
                 <ChevronRight className="ml-2 h-4 w-4" />
               </Link>
